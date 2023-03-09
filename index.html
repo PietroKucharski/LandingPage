@@ -10,28 +10,34 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Landing Page</title>
 </head>
-<body class="main-bg">
+<body>
+    <input type="checkbox" role="button" aria-label="Close menu" class="close-menu" id="close-menu">
+    <label for="close-menu" title="close menu" class="close-menu-label"></label>
     <aside class="menu white-bg">
+        
         <div class="main-content menu-content">
-            <a href="#">
-                <h1>Logo</h1>
+            <a href="#home">
+                <h1 onclick="getElementById('close-menu').checked = false;">Logo</h1>
             </a>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li>
                         <a href="#intro">Intro</a>
                     </li>
                     <li>
-                        <a href="#top3">Top 3</a>
+                        <a href="#grid-one">Grid</a>
                     </li>
                     <li>
-                        <a href="#">Gallery</a>
+                        <a href="#gallery">Gallery</a>
                     </li>
                     <li>
-                        <a href="#">Work</a>
+                        <a href="#grid-two">Grid2</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -40,7 +46,7 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="intro" class="intro main-bg section">
+    <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>7 Ways ChatGPT Can Help Developers</h2>
@@ -52,7 +58,7 @@
         </div>
     </section>
 
-    <section id="top3" class="white-bg section">
+    <section id="intro" class="white-bg section">
         <div class="main-content top3-content">
             <h2>Top 3 JavaScript Frameworks for Server-side Rendering in 2022</h2>
 
@@ -66,5 +72,188 @@
             </p>
         </div>
     </section>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-description-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Description</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nobis labore iusto esse vero optio incidunt rem a corporis in sed, repudiandae perferendis ullam sapiente quidem delectus mollitia quis sequi?
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error, magni pariatur enim autem natus laudantium explicabo, earum vero iure tenetur nam. Enim illum tempora iste labore dolores, doloribus id!
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error, magni pariatur enim autem natus laudantium explicabo, earum vero iure tenetur nam. Enim illum tempora iste labore dolores, doloribus id!
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Description</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="main-content grid-description-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Description</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nobis labore iusto esse vero optio incidunt rem a corporis in sed, repudiandae perferendis ullam sapiente quidem delectus mollitia quis sequi?
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error, magni pariatur enim autem natus laudantium explicabo, earum vero iure tenetur nam. Enim illum tempora iste labore dolores, doloribus id!
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, error, magni pariatur enim autem natus laudantium explicabo, earum vero iure tenetur nam. Enim illum tempora iste labore dolores, doloribus id!
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Pricing</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore est laudantium autem dolor dolore natus praesentium rerum voluptas ratione, ipsa et voluptatem odit asperiores veritatis necessitatibus saepe at facere.
+            </p>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Tile 1</th>
+                            <th>Tile 2</th>
+                            <th>Tile 3</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>7 Ways ChatGPT Can Help Developers</h2>
+                <p>TLDRChatGPT is a long-form question-answering AI from OpenAI that responds to complicated questions. It's an exciting new technology that is being taught to understand and respond to questions posed by people IRL. The language model can help you with coding, email creation, and essay writing, as well as answer your inquiries.</p>
+            </div>
+            <div class="intro-img">
+                <img src="./assets/img/contact.svg" alt="desenho de um homem olhando para uma tela que tem os símbolos de uma tag em html">
+            </div>
+
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p><a href="">Feito com <span class="heart">❤</span> por Pietro Kucharski</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#home">➤</a>
 </body>
 </html>
